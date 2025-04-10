@@ -1,0 +1,131 @@
+/* p {
+  color: green;
+  font-size: 18px;
+} */
+
+/* Font  */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Border */
+.box {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* BACKGROUND */
+.hero {
+  background-image: url(quiz-app.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+}
+
+/* MARGIN */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: grey;
+  padding: 20px;
+}
+
+.sections {
+  margin-bottom: 20px;
+}
+
+/* FLOAT */
+.img-float {
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 200px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* POSITION */
+.relative-box {
+  position: relative;
+  background-color: burlywood;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: maroon;
+  padding: 10px;
+}
+
+/* PSEUDO-CLASSES  */
+a {
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #333;
+}
+
+ul li:nth-child(odd) {
+  background-color: green;
+}
+
+/* SHADOW */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ICONS */
+.icon-btn {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+  background-color: #0056b3;
+}
