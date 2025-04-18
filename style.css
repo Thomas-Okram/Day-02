@@ -1,0 +1,114 @@
+/* Header with a logo */
+.header {
+  background: #202020;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the logo on hover */
+.logo:hover {
+  transform: rotate(-5deg) scale(1, 1);
+}
+
+/* defn: allows you to animate css properties over time using @keyframes
+ essential sub-property::
+ 1. animation-name -> Name of the animation.
+ 2. animation-timing-function -> Speed curve (ease, linear).
+ 3. animation-delay -> Delay before animation.
+ 4. animation-iteration-count -> How many times.
+ 5. animation direction -> Normal, reverse, alternate.
+
+*/
+
+.menu-icon {
+  color: grey;
+  font-size: 24px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px 20px;
+  border-radius: 16px;
+  border: none;
+}
+
+.thumbnail {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #444;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.video-row {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  background-color: #eee;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-box {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .video-row {
+    flex-direction: column;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+}
+
+.video-box {
+  transition: transform 0.3s ease, box-shodow 0.3s ease;
+}
+
+.video-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
