@@ -130,13 +130,144 @@
 // converting a value from one data type to another,
 // like string to number or number to boolean.
 
-let amount = 100;
-let money = "100";
-let floatValue = "99.6";
+// let amount = 100;
+// let money = "100";
+// let floatValue = "99.6";
 
-// Convert String to a number
-money = parseInt(money); //parseInt() -> string to number
-console.log(typeof money);
+// // Convert String to a number
+// money = parseInt(money); //parseInt() -> string to number
+// console.log(typeof money);
 
-amount = toString(amount); //toSting() -> number to sting
-console.log(typeof amount);
+// amount = toString(amount); //toSting() -> number to sting
+// console.log(typeof amount);
+
+// Control Flow.
+// 1. Conditional statements
+// A conditional statement lets you execut a block of code
+//  only if a specific condition is true. It's like
+// "if this happens, then do that".
+
+// if (condition) {....}
+// else if (second condition) {...}
+// else (...)
+
+console.log("Conditional Statements");
+
+let a = 200;
+let b = 200;
+
+if (a > b) {
+  console.log(`${a} is greater than ${b}`);
+} else if (a == b) {
+  console.log(`${a} and ${b} are equal`);
+} else {
+  console.log(`${b} is greater than ${a}`);
+}
+
+let time = 20;
+
+if (time < 12) {
+  console.log("Good Morning");
+} else if (time < 18) {
+  console.log("Good Afternoon");
+} else {
+  console.log("Good evening");
+}
+
+console.log("Even odd program");
+
+let num = 12345678901;
+
+if (num % 2 == 0) {
+  console.log(`${num} is even`);
+} else {
+  console.log(`${num} is odd`);
+}
+
+// A switch statement is used to perform different
+// actions based on different conditions,
+// especially when clicking one variable
+// against multiple values
+
+// Syntax
+// switch (expression){
+//     case value1:
+//         // code block
+//         break;
+//     case value2:
+//         // code block
+//         break;
+//     default:
+//         // code block
+// }
+
+let day = "Jauary";
+
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday");
+    break;
+
+  case "Tuesday":
+    console.log("Today is Tuesday");
+    break;
+
+  case "Wednesday":
+    console.log("Today is Wednesday");
+    break;
+
+  case "Thursday":
+    console.log("Today is Thursday");
+    break;
+
+  case "Friday":
+    console.log("Today is Friday");
+    break;
+
+  case "Saturday":
+    console.log("Today is Saturday");
+    break;
+
+  default:
+    console.log("Don't know what day is today!");
+}
+
+// For Loop -> A for loop repeats a block of code
+// a specific number of times, usially
+// when you know how many times to run the loop
+
+// Syntax
+// for (initialization; CSSConditionRule; increment){
+//     // code block
+// }
+
+let fruits = ["apple", "banana", "mango"];
+for (let i = 0; i < fruits.length; i++) console.log(fruits[i]);
+
+for (let i = 0; i <= 5; i++) {
+  console.log("Optivoxx John ", i);
+}
+
+// print your name & numbers from 0 to 1000
+
+// While Loop -> A while Loop repeats a block of
+// code as long as a condition is true.
+// You use it  when the number of repetition
+// is not known in instance
+
+// Syntax
+// while (condition){
+//     // code block
+// }
+
+// let userClicked = false;
+// while (!userClicked) {
+//   console.log("Waiting for User to click....");
+// }
+
+let i = 10;
+
+while (i <= 100) {
+  console.log("John Optivoxx using while loop", i);
+  i++;
+}
