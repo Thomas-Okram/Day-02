@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "age": "40",
+  "email": "john@optivoxx.com",
+  "isSuscribed": true,
+  "hobbies": ["Reading", "Coding", "Playing"],
+  "address": {
+    "city": "New York",
+    "zip-code": "1001"
+  }
+}
