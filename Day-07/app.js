@@ -775,9 +775,9 @@ console.log("Welcome to Day-08");
 // const mySymbol1 = Symbol();
 // const mySymbol2 = Symbol("My custom symbol");
 
-const symbol1 = Symbol("name");
-const symbol2 = Symbol("name");
+// const symbol1 = Symbol("name");
+// const symbol2 = Symbol("name");
 
-console.log(symbol1);
-console.log(typeof symbol1);
-console.log(symbol1 === symbol2);
+// console.log(symbol1);
+// console.log(typeof symbol1);
+// console.log(symbol1 === symbol2);
