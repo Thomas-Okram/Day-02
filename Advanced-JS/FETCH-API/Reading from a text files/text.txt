@@ -1,0 +1,1 @@
+Hello This is the last day of Learning JavaScript. And we've covered the Entire JavaScript from Scratch.
